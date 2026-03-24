@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주식회사 에코엔 | 자연을 설계하다</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <div class="logo-icon">E</div>
+                    <div class="logo-text">
+                        <span class="logo-main">ECOEN</span>
+                        <span class="logo-sub">LANDSCAPE</span>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">회사소개</a></li>
+                    <li><a href="#services" class="nav-link">서비스</a></li>
+                    <li><a href="#projects" class="nav-link">프로젝트</a></li>
+                    <li><a href="#history" class="nav-link">연혁</a></li>
+                    <li><a href="#contact" class="nav-link">문의</a></li>
+                </ul>
+                <button class="contact-btn">문의하기</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663466723597/8TKFevD8EhaYugbz6PwrRN/ecoen-hero-bg-ZNnL8SXJz358u46sYdoi9s.webp" alt="에코엔 히어로 배경">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <!-- 슬라이드 컨테이너 -->
+                    <div class="hero-slides">
+                        <!-- 슬라이드 1 -->
+                        <div class="hero-slide active" data-slide="0">
+                            <div class="slide-number">
+                                <span class="number">01</span>
+                                <div class="divider"></div>
+                                <span class="tagline">Nature by Design</span>
+                            </div>
+                            <h1 class="hero-title">
+                                자연을<br><span class="highlight">설계하다</span>
+                            </h1>
+                            <p class="hero-subtitle">도시와 자연을 연결하는<br>종합 조경 전문 기업</p>
+                        </div>
+
+                        <!-- 슬라이드 2 -->
+                        <div class="hero-slide" data-slide="1">
+                            <div class="slide-number">
+                                <span class="number">02</span>
+                                <div class="divider"></div>
+                                <span class="tagline">Green Future</span>
+                            </div>
+                            <h1 class="hero-title">
+                                녹색의<br><span class="highlight">미래를 짓다</span>
+                            </h1>
+                            <p class="hero-subtitle">지속 가능한 환경을 위한<br>생태적 설계와 혁신</p>
+                        </div>
+
+                        <!-- 슬라이드 3 -->
+                        <div class="hero-slide" data-slide="2">
+                            <div class="slide-number">
+                                <span class="number">03</span>
+                                <div class="divider"></div>
+                                <span class="tagline">Harmony</span>
+                            </div>
+                            <h1 class="hero-title">
+                                사람과 자연의<br><span class="highlight">조화</span>
+                            </h1>
+                            <p class="hero-subtitle">공존하는 공간을 만드는<br>에코엔의 철학</p>
+                        </div>
+                    </div>
+
+                    <!-- CTA 버튼 (모든 슬라이드에 공통) -->
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">프로젝트 보기</button>
+                        <button class="btn btn-secondary" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">회사 소개 →</button>
+                    </div>
+
+                    <!-- 슬라이드 인디케이터 -->
+                    <div class="hero-indicators">
+                        <button class="indicator active" data-slide="0" aria-label="슬라이드 1"></button>
+                        <button class="indicator" data-slide="1" aria-label="슬라이드 2"></button>
+                        <button class="indicator" data-slide="2" aria-label="슬라이드 3"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 12L2 6M8 12L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- 회사소개 섹션 -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <div class="section-divider"></div>
+                <span class="section-label">About Us</span>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">자연과 도시를<br><span class="highlight">연결합니다</span></h2>
+                    <p class="about-description">
+                        주식회사 에코엔은 1999년 창립 이래 대한민국 조경 산업을 선도해 온 종합 조경 전문 기업입니다.
+                        공원, 정원, 도시녹지, 생태복원 등 다양한 분야에서 자연과 인간의 조화로운 공간을 창조합니다.
+                    </p>
+                    <p class="about-description secondary">
+                        단순한 시공을 넘어, 지속 가능한 환경을 위한 생태적 설계와 혁신적 기술을 바탕으로
+                        미래 세대를 위한 녹색 공간을 만들어 갑니다.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <span class="stat-value">25+</span>
+                            <span class="stat-label">년 업력</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">500+</span>
+                            <span class="stat-label">완공 프로젝트</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">1,200</span>
+                            <span class="stat-label">헥타르 시공</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">98%</span>
+                            <span class="stat-label">고객 만족도</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663466723597/8TKFevD8EhaYugbz6PwrRN/ecoen-about-BAbXQG6N27uc9JNWpWcEhJ.webp" alt="에코엔 조경 현장">
+                    <div class="image-overlay"></div>
+                    <div class="mission-box">
+                        <p class="mission-label">Mission</p>
+                        <p class="mission-text">"자연의 가치를 도시 공간에 담아, 사람과 환경이 공존하는 미래를 만듭니다"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 서비스 섹션 -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <div class="section-divider"></div>
+                <span class="section-label">Services</span>
+            </div>
+            <div class="services-header">
+                <h2 class="section-title">에코엔의<br><span class="highlight">전문 서비스</span></h2>
+                <p class="services-description">자연과 도시가 조화를 이루는 공간을 만들기 위해<br>에코엔은 설계부터 시공, 유지관리까지 토탈 서비스를 제공합니다.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌲</div>
+                    <p class="service-subtitle">Park Construction</p>
+                    <h3 class="service-title">공원 조성</h3>
+                    <p class="service-description">도시 공원, 근린공원, 어린이공원 등 다양한 유형의 공원을 설계하고 조성합니다.</p>
+                    <div class="service-tags">
+                        <span class="tag">도시공원</span>
+                        <span class="tag">생태공원</span>
+                        <span class="tag">테마공원</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <p class="service-subtitle">Residential Landscape</p>
+                    <h3 class="service-title">단지 조경</h3>
+                    <p class="service-description">아파트 단지, 주거 단지의 외부 공간을 아름답고 기능적으로 설계합니다.</p>
+                    <div class="service-tags">
+                        <span class="tag">아파트</span>
+                        <span class="tag">주거단지</span>
+                        <span class="tag">상업시설</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌿</div>
+                    <p class="service-subtitle">Garden Design</p>
+                    <h3 class="service-title">정원 설계</h3>
+                    <p class="service-description">개인 정원부터 기업 정원까지, 고객의 라이프스타일에 맞는 맞춤형 정원을 설계합니다.</p>
+                    <div class="service-tags">
+                        <span class="tag">개인정원</span>
+                        <span class="tag">기업정원</span>
+                        <span class="tag">옥상정원</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💧</div>
+                    <p class="service-subtitle">Water Features</p>
+                    <h3 class="service-title">수경 시설</h3>
+                    <p class="service-description">분수, 연못, 수로 등 다양한 수경 시설을 설계하고 시공합니다.</p>
+                    <div class="service-tags">
+                        <span class="tag">분수</span>
+                        <span class="tag">연못</span>
+                        <span class="tag">수경조형</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⛰️</div>
+                    <p class="service-subtitle">Ecological Restoration</p>
+                    <h3 class="service-title">생태 복원</h3>
+                    <p class="service-description">훼손된 자연환경을 복원하고 생태계를 회복시킵니다.</p>
+                    <div class="service-tags">
+                        <span class="tag">생태복원</span>
+                        <span class="tag">비오톱</span>
+                        <span class="tag">녹화공사</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌱</div>
+                    <p class="service-subtitle">Maintenance</p>
+                    <h3 class="service-title">유지 관리</h3>
+                    <p class="service-description">조성된 조경 공간의 지속적인 관리와 유지보수 서비스를 제공합니다.</p>
+                    <div class="service-tags">
+                        <span class="tag">정기관리</span>
+                        <span class="tag">수목관리</span>
+                        <span class="tag">시설유지</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 프로젝트 섹션 -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <div class="section-divider"></div>
+                <span class="section-label">Projects</span>
+            </div>
+            <h2 class="section-title">주요<br><span class="highlight">프로젝트</span></h2>
+            <div class="projects-content">
+                <div class="projects-list">
+                    <div class="project-item active" data-project="0">
+                        <div class="project-header">
+                            <div>
+                                <span class="project-id">01</span>
+                                <span class="project-category">생태공원</span>
+                            </div>
+                            <div class="project-meta">
+                                <p class="project-year">2023</p>
+                                <p class="project-area">45,000㎡</p>
+                            </div>
+                        </div>
+                        <h3 class="project-title">한강 생태공원</h3>
+                        <p class="project-location">서울특별시 마포구</p>
+                        <p class="project-description">한강변 자연생태계를 복원하고 시민들이 자연을 가까이 느낄 수 있는 생태공원을 조성했습니다.</p>
+                    </div>
+                    <div class="project-item" data-project="1">
+                        <div class="project-header">
+                            <div>
+                                <span class="project-id">02</span>
+                                <span class="project-category">단지조경</span>
+                            </div>
+                            <div class="project-meta">
+                                <p class="project-year">2023</p>
+                                <p class="project-area">28,000㎡</p>
+                            </div>
+                        </div>
+                        <h3 class="project-title">그린 빌리지 단지</h3>
+                        <p class="project-location">경기도 성남시</p>
+                        <p class="project-description">주민들의 삶의 질을 높이는 사계절 아름다운 주거 단지 조경을 설계하고 시공했습니다.</p>
+                    </div>
+                    <div class="project-item" data-project="2">
+                        <div class="project-header">
+                            <div>
+                                <span class="project-id">03</span>
+                                <span class="project-category">옥상정원</span>
+                            </div>
+                            <div class="project-meta">
+                                <p class="project-year">2022</p>
+                                <p class="project-area">3,200㎡</p>
+                            </div>
+                        </div>
+                        <h3 class="project-title">루프탑 가든 타워</h3>
+                        <p class="project-location">서울특별시 강남구</p>
+                        <p class="project-description">도심 속 힐링 공간으로 각광받는 프리미엄 루프탑 가든을 설계하고 조성했습니다.</p>
+                    </div>
+                </div>
+                <div class="projects-image">
+                    <img id="projectImage" src="https://d2xsxph8kpxj0f.cloudfront.net/310519663466723597/8TKFevD8EhaYugbz6PwrRN/ecoen-project2-CZhGqgqZisnJEdCzRJhBsb.webp" alt="프로젝트 이미지">
+                    <div class="image-info">
+                        <p class="info-category">생태공원</p>
+                        <h3 class="info-title">한강 생태공원</h3>
+                        <p class="info-location">서울특별시 마포구</p>
+                        <div class="info-area">
+                            <p class="area-value">45,000㎡</p>
+                            <p class="area-label">시공 면적</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-footer">
+                <p>총 <span class="highlight">500+</span>개의 프로젝트를 완성했습니다</p>
+                <button class="view-all">전체 포트폴리오 보기 →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 연혁 섹션 -->
+    <section class="history" id="history">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <div class="section-divider"></div>
+                <span class="section-label">History</span>
+            </div>
+            <h2 class="section-title">25년의<br><span class="highlight">성장 역사</span></h2>
+            <p class="history-subtitle">1999년 창립 이래, 에코엔은 대한민국 조경 산업의<br>발전과 함께 성장해 왔습니다.</p>
+            <div class="timeline">
+                <div class="timeline-item highlight">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">1999</span>
+                        <span class="timeline-badge">주요 이정표</span>
+                        <h3>주식회사 에코엔 창립</h3>
+                        <p>조경 전문 기업으로 출발, 서울 강남구에 본사 설립</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2003</span>
+                        <h3>조경 설계 전문 부서 신설</h3>
+                        <p>설계팀 독립 운영 시작, 대형 공공 프로젝트 수주</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2007</span>
+                        <h3>생태복원 사업부 확장</h3>
+                        <p>환경부 생태복원 전문 기업 인증 획득, 하천 복원 사업 진출</p>
+                    </div>
+                </div>
+                <div class="timeline-item highlight">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2010</span>
+                        <span class="timeline-badge">주요 이정표</span>
+                        <h3>매출 100억 달성</h3>
+                        <p>창립 11년 만에 연매출 100억 원 돌파, 임직원 200명 규모 성장</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2015</span>
+                        <h3>해외 사업 진출</h3>
+                        <p>베트남, 말레이시아 등 동남아시아 조경 프로젝트 수주</p>
+                    </div>
+                </div>
+                <div class="timeline-item highlight">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2019</span>
+                        <span class="timeline-badge">주요 이정표</span>
+                        <h3>창립 20주년 & 스마트 조경 도입</h3>
+                        <p>IoT 기반 스마트 조경 관리 시스템 개발, 지속가능경영 선포</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2022</span>
+                        <h3>대한민국 조경대상 수상</h3>
+                        <p>국토교통부 장관상 수상, 업계 최고 권위의 상 획득</p>
+                    </div>
+                </div>
+                <div class="timeline-item highlight">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2024</span>
+                        <span class="timeline-badge">주요 이정표</span>
+                        <h3>탄소중립 조경 선언</h3>
+                        <p>2030년까지 탄소중립 조경 실현 선언, ESG 경영 본격화</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 문의 섹션 -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <div class="section-divider"></div>
+                <span class="section-label">Contact</span>
+            </div>
+            <h2 class="section-title">프로젝트를<br><span class="highlight">시작하세요</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-description">조경 프로젝트에 관한 문의사항이 있으시면 언제든지 연락주세요.<br>전문 상담사가 최적의 솔루션을 제안해 드립니다.</p>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div>
+                                <p class="info-label">주소</p>
+                                <p class="info-value">서울특별시 강남구 테헤란로 123<br>에코엔빌딩 7층</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div>
+                                <p class="info-label">전화</p>
+                                <p class="info-value">02-1234-5678</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">✉️</div>
+                            <div>
+                                <p class="info-label">이메일</p>
+                                <p class="info-value">info@ecoen.co.kr</p>
+                            </div>
+                        </div>
+                        <!-- <div class="info-item">
+                            <div class="info-icon">🕐</div>
+                            <div>
+                                <p class="info-label">운영시간</p>
+                                <p class="info-value">평일 09:00 ~ 18:00<br>(토·일·공휴일 휴무)</p>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- <div class="social-links">
+                        <p class="social-label">Follow Us</p>
+                        <div class="social-buttons">
+                            <button class="social-btn">Instagram</button>
+                            <button class="social-btn">YouTube</button>
+                            <button class="social-btn">Blog</button>
+                        </div>
+                    </div> -->
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>이름 *</label>
+                            <input type="text" name="name" required placeholder="홍길동">
+                        </div>
+                        <div class="form-group">
+                            <label>회사명</label>
+                            <input type="text" name="company" placeholder="(주)에코건설">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>연락처 *</label>
+                            <input type="tel" name="phone" required placeholder="010-1234-5678">
+                        </div>
+                        <div class="form-group">
+                            <label>이메일</label>
+                            <input type="email" name="email" placeholder="example@email.com">
+                        </div>
+                    </div>
+                    <div class="form-group full">
+                        <label>서비스 유형</label>
+                        <select name="service">
+                            <option value="">서비스를 선택해주세요</option>
+                            <option value="park">공원 조성</option>
+                            <option value="residential">단지 조경</option>
+                            <option value="garden">정원 설계</option>
+                            <option value="water">수경 시설</option>
+                            <option value="eco">생태 복원</option>
+                            <option value="maintenance">유지 관리</option>
+                            <option value="other">기타</option>
+                        </select>
+                    </div>
+                    <div class="form-group full">
+                        <label>문의 내용 *</label>
+                        <textarea name="message" rows="5" required placeholder="프로젝트 규모, 위치, 예산 등 상세한 내용을 입력해주세요."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full">문의 보내기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-company">
+                    <div class="footer-logo">
+                        <div class="logo-icon">E</div>
+                        <div>
+                            <span class="logo-main">ECOEN</span>
+                            <span class="logo-sub">Landscape</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">자연과 도시를 연결하는 종합 조경 전문 기업.<br>1999년 창립 이래 대한민국 조경 산업을 선도해 왔습니다.</p>
+                    <div class="footer-info">
+                        <p>주식회사 에코엔 | 대표이사: 김에코</p>
+                        <p>사업자등록번호: 123-45-67890</p>
+                        <p>서울특별시 강남구 테헤란로 123 에코엔빌딩 7층</p>
+                        <p>Tel: 02-1234-5678 | Fax: 02-1234-5679</p>
+                    </div>
+                </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 주식회사 에코엔. All rights reserved.</p>
+                <div class="footer-legal">
+                    <!-- <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">사이트맵</a> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
